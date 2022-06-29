@@ -39,6 +39,10 @@
       .baseline {
         align-items: baseline;
       }
+
+      .column {
+        flex-direction: column;
+      }
     </style>
   </head>
   <body>
@@ -81,6 +85,33 @@
 
     <hr />
 
-    <h2>column</h2>
+    <h2>COLUMN</h2>
+    <h3>flex-start</h3>
+    <section class="container start column">
+      <div class="item">Item 1</div>
+      <div class="item">Lorem ipsum dolor sit amet</div>
+      <div class="item">Item 3 mais algum texto, texto, texto, texto...</div>
+    </section>
+
+    <h3>flex-end</h3>
+    <section class="container end column">
+      <div class="item">Item 1</div>
+      <div class="item">Lorem ipsum dolor sit amet</div>
+      <div class="item">Item 3 mais algum texto, texto, texto, texto...</div>
+    </section>
+
+    <h3>center</h3>
+    <section class="container center column">
+      <div class="item">Item 1</div>
+      <div class="item">Item 3 mais algum texto...</div>
+      <div class="item">Lorem ipsum dolor sit amet</div>
+    </section>
+
+    <h3>baseline</h3>
+    <section class="container baseline column">
+      <div class="item"><br />Item 1</div>
+      <div class="item">Lorem ipsum dolor sit amet</div>
+      <div class="item">Item 3 mais algum texto, texto, texto, texto...</div>
+    </section>
   </body>
 </html>
