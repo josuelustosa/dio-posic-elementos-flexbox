@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundamentos - flex shrink</title>
+
+    <style>
+      .flex-container {
+        display: flex;
+        border: 0.0625rem solid #000000;
+        max-width: 21.875rem;
+      }
+
+      .item {
+        background-color: #ff4500;
+        color: #ffffff;
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0.3125rem;
+      }
+
+      .s-0 {
+        flex-shrink: 0;
+        flex-basis: 12.5rem;
+      }
+      
+      .s-1 {
+        flex-shrink: 1;
+      }
+      
+      .fg-1 {
+        flex-grow: 1;
+      }
+      
+      .s-2 {
+        flex-shrink: 2;
+        flex-basis: 6.25rem;
+      }
+      
+      .s-3 {
+        flex-shrink: 3;
+        flex-basis: 6.25rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="../../index.html"> Início</a> |
+      <a href="8-flex-basis.html"> &lsaquo; Anterior</a>
+      |
+      <a href="#"> Próxima &rsaquo;</a>
+    </header>
+    <hr />
+
+    <h1>Flex Shrink</h1>
+    <h2>flex Shrink: 1</h2>
+    <div class="flex-container">
+      <div class="item s-1 fg-1">A</div>
+      <div class="item s-1 fg-1">B</div>
+      <div class="item s-1 fg-1">C</div>
+      <div class="item s-1 fg-1">D</div>
+      <div class="item s-1 fg-1">E</div>
+    </div>
+    <div class="flex-container">
+      <div class="item s-1 fg-1">A</div>
+      <div class="item s-1 fg-1">The generated</div>
+      <div class="item s-1 fg-1">C</div>
+      <div class="item s-1 fg-1">D</div>
+    </div>
+
+    <h2>flex Shrink: 0 / basis: 200px</h2>
+    <div class="flex-container">
+      <div class="item s-0 fg-1">A</div>
+      <div class="item s-0 fg-1">The generated</div>
+      <div class="item s-0 fg-1">C</div>
+      <div class="item s-0 fg-1">D</div>
+    </div>
+
+    <h2>flex Shrink: mix / basis: 200px</h2>
+    <div class="flex-container">
+      <div class="item s-1 fg-1">A</div>
+      <div class="item s-2 fg-1">The generated</div>
+      <div class="item s-2 fg-1">C</div>
+      <div class="item s-3 fg-1">D</div>
+    </div>
+  </body>
+</html>
