@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundamentos - flex</title>
+
+    <style>
+      .flex-container {
+        display: flex;
+        border: 0.0625rem solid #000000;
+        max-width: 25rem;
+        margin-bottom: .625rem;
+      }
+
+      .item {
+        background-color: #ff4500;
+        color: #ffffff;
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0.3125rem;
+      }
+
+      .flex-1 {
+        flex: 1; /* grow = 1; shrink = 1; basis = 0 */
+      }
+
+      .largura {
+        width: 12.5rem;
+      }
+
+      .flex-2 {
+        flex: 2; /* grow = 2; shrink = 1; basis = 0 */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="../../index.html"> Início</a> |
+      <a href="9-flex-shrink.html"> &lsaquo; Anterior</a>
+      |
+      <a href="#"> Próxima &rsaquo;</a>
+    </header>
+    <hr />
+
+    <h1>Flex</h1>
+    <h2>flex: 1</h2>
+    <div class="flex-container">
+      <div class="item flex-1">A</div>
+      <div class="item flex-1">BBB</div>
+      <div class="item flex-1">CC</div>
+      <div class="item flex-1">D</div>
+      <div class="item flex-1">EF</div>
+    </div>
+
+    <h2>flex: mix</h2>
+    <div class="flex-container">
+      <div class="item flex-1">A</div>
+      <div class="item flex-2">BBB</div>
+      <div class="item flex-2">CC</div>
+      <div class="item flex-1">D</div>
+      <div class="item flex-1">EF</div>
+    </div>
+    
+    <h2>flex: with ignorado (basics = 0)</h2>
+    <div class="flex-container">
+      <div class="item flex-1 largura">A</div>
+      <div class="item flex-1 largura">BBB</div>
+      <div class="item flex-1 largura">CC</div>
+      <div class="item flex-1 largura">D</div>
+      <div class="item flex-1 largura">EF</div>
+    </div>
+  </body>
+</html>
