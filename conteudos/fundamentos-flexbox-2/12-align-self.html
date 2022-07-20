@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundamentos - align-self</title>
+
+    <style>
+      .flex-container {
+        display: flex;
+        border: 0.0625rem solid #000000;
+        max-width: 21.875rem;
+        margin-bottom: 0.625rem;
+      }
+
+      .align-container {
+        align-items: flex-end;
+      }
+
+      .item {
+        background-color: #ff4500;
+        color: #ffffff;
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0.3125rem;
+      }
+
+      .center {
+        align-self: center;
+      }
+
+      .start {
+        align-self: flex-start;
+      }
+
+      .end {
+        align-self: flex-end;
+      }
+
+      .baseline {
+        align-self: baseline;
+      }
+
+      .stretch {
+        align-self: stretch;
+      }
+
+      .auto {
+        align-self: auto;
+      }
+
+      .direction {
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="../../index.html"> Início</a> |
+      <a href="10-flex.html"> &lsaquo; Anterior</a>
+      |
+      <a href="#"> Próxima &rsaquo;</a>
+    </header>
+    <hr />
+
+    <h1>align-self</h1>
+    <h2>row</h2>
+    <h3>auto</h3>
+    <div class="flex-container align-container">
+      <div class="item auto">AAA</div>
+      <div class="item auto">123</div>
+      <div class="item auto">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate
+        veniam iure beatae hic qui delectus modi voluptatibus enim esse. Ipsum,
+        iure! Consequatur ea dolorem corporis iure itaque vitae repudiandae
+        dolores.
+      </div>
+      <div class="item auto">ITEM 4</div>
+    </div>
+
+    <h3>mix</h3>
+    <div class="flex-container">
+      <div class="item center">AAA</div>
+      <div class="item start">123</div>
+      <div class="item stretch">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate
+        veniam iure beatae hic qui delectus modi voluptatibus enim esse. Ipsum,
+        iure! Consequatur ea dolorem corporis iure itaque vitae repudiandae
+        dolores.
+      </div>
+      <div class="item end">ITEM 4</div>
+    </div>
+
+    <h3>center</h3>
+    <div class="flex-container">
+      <div class="item center">AAA</div>
+      <div class="item center">AAA</div>
+      <div class="item center">AAA</div>
+      <div class="item center">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+      </div>
+    </div>
+
+    <h2>column</h2>
+    <h3>auto</h3> 
+    <div class="flex-container align-container direction">
+      <div class="item auto">AAA</div>
+      <div class="item auto">123</div>
+      <div class="item auto">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate
+        veniam iure beatae hic qui delectus modi voluptatibus enim esse. Ipsum,
+        iure! Consequatur ea dolorem corporis iure itaque vitae repudiandae
+        dolores.
+      </div>
+      <div class="item auto">ITEM 4</div>
+    </div>
+
+    <h3>mix</h3>
+    <div class="flex-container direction">
+      <div class="item center">AAA</div>
+      <div class="item start">123</div>
+      <div class="item stretch">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate
+        veniam iure beatae hic qui delectus modi voluptatibus enim esse. Ipsum,
+        iure! Consequatur ea dolorem corporis iure itaque vitae repudiandae
+        dolores.
+      </div>
+      <div class="item end">ITEM 4</div>
+    </div>
+
+    <h3>center</h3>
+    <div class="flex-container direction">
+      <div class="item center">AAA</div>
+      <div class="item center">AAA</div>
+      <div class="item center">AAA</div>
+      <div class="item center">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+      </div>
+    </div>
+
+
+  </body>
+</html>
