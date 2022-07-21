@@ -21,8 +21,24 @@ ul li a {
     display: flex;
     max-width: 62rem;
     margin: auto;
+    width: 100%;
 }
 
 header {
     background-color: #122A57;
+    height: 6.25rem;
+    display: flex;
+    align-items: center;
+}
+
+header .list-items {
+    display: flex;
+}
+
+.list-items li a{
+    color: #ffffff;
+}
+
+header .menu {
+    justify-content: space-between;
 }
